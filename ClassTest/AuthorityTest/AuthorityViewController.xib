@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorityViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1H-FP-Ycm">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZW9-Pm-A3h"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <items>
+                        <navigationItem id="5NA-nI-zvJ"/>
+                    </items>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DN-Ps-802">
+                    <rect key="frame" x="137" y="106" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EPn-sM-VU3"/>
+                        <constraint firstAttribute="width" constant="100" id="RpO-oA-dlb"/>
+                    </constraints>
+                    <state key="normal" title="联网权限"/>
+                    <connections>
+                        <action selector="network:" destination="-1" eventType="touchUpInside" id="Nzb-Zd-cUh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpm-zD-Y8t">
+                    <rect key="frame" x="137" y="163" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5N8-Zj-Djm"/>
+                        <constraint firstAttribute="width" constant="100" id="qAP-ui-Yrt"/>
+                    </constraints>
+                    <state key="normal" title="相机权限"/>
+                    <connections>
+                        <action selector="camera:" destination="-1" eventType="touchUpInside" id="oOR-iT-eCu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-Fh-rrW">
+                    <rect key="frame" x="137" y="212" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="79C-xf-CZs"/>
+                        <constraint firstAttribute="height" constant="30" id="Wa4-SL-e4n"/>
+                    </constraints>
+                    <state key="normal" title="相册权限"/>
+                    <connections>
+                        <action selector="photo:" destination="-1" eventType="touchUpInside" id="MEv-4t-HPb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe3-ZV-1TS">
+                    <rect key="frame" x="137.5" y="264" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4tj-LE-o5W"/>
+                        <constraint firstAttribute="width" constant="100" id="qzg-YF-Gon"/>
+                    </constraints>
+                    <state key="normal" title="麦克风权限"/>
+                    <connections>
+                        <action selector="microphone:" destination="-1" eventType="touchUpInside" id="WI9-g5-fr9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cep-Q1-qZJ">
+                    <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="c8x-9r-G1P"/>
+                        <constraint firstAttribute="width" constant="100" id="lmJ-eE-dba"/>
+                    </constraints>
+                    <state key="normal" title="定位权限"/>
+                    <connections>
+                        <action selector="location:" destination="-1" eventType="touchUpInside" id="OKx-Ta-mKm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGq-FN-8qe">
+                    <rect key="frame" x="137.5" y="377" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="65b-Vs-xtD"/>
+                        <constraint firstAttribute="height" constant="30" id="Rbu-1P-dKv"/>
+                    </constraints>
+                    <state key="normal" title="推送权限"/>
+                    <connections>
+                        <action selector="pushnotification:" destination="-1" eventType="touchUpInside" id="NHS-vh-qTk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-08-yUw">
+                    <rect key="frame" x="137" y="435" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FP5-Gd-jvm"/>
+                        <constraint firstAttribute="width" constant="100" id="FYa-ew-1cB"/>
+                    </constraints>
+                    <state key="normal" title="通讯录权限"/>
+                    <connections>
+                        <action selector="contacts:" destination="-1" eventType="touchUpInside" id="Ieq-du-YQE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O1H-FP-Ycm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7jE-rt-5rc"/>
+                <constraint firstItem="3DN-Ps-802" firstAttribute="top" secondItem="O1H-FP-Ycm" secondAttribute="bottom" constant="42" id="94F-WH-634"/>
+                <constraint firstAttribute="trailing" secondItem="O1H-FP-Ycm" secondAttribute="trailing" id="Dcl-RQ-Dlz"/>
+                <constraint firstItem="O1H-FP-Ycm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="JKN-cX-YeS"/>
+                <constraint firstItem="GGq-FN-8qe" firstAttribute="top" secondItem="Cep-Q1-qZJ" secondAttribute="bottom" constant="29" id="Tn2-5c-4eW"/>
+                <constraint firstItem="qe3-ZV-1TS" firstAttribute="top" secondItem="kcE-Fh-rrW" secondAttribute="bottom" constant="22" id="YPF-fQ-BwA"/>
+                <constraint firstItem="3DN-Ps-802" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yae-YU-Thl"/>
+                <constraint firstItem="eWo-08-yUw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yos-bW-djc"/>
+                <constraint firstItem="eWo-08-yUw" firstAttribute="top" secondItem="GGq-FN-8qe" secondAttribute="bottom" constant="28" id="ZuU-Qr-woo"/>
+                <constraint firstItem="GGq-FN-8qe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ccL-A0-bZC"/>
+                <constraint firstItem="kcE-Fh-rrW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dkn-bX-ewm"/>
+                <constraint firstItem="Cep-Q1-qZJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f4b-cl-fgO"/>
+                <constraint firstItem="kcE-Fh-rrW" firstAttribute="top" secondItem="fpm-zD-Y8t" secondAttribute="bottom" constant="19" id="kMh-iT-MVL"/>
+                <constraint firstItem="fpm-zD-Y8t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lAw-Vc-OtS"/>
+                <constraint firstItem="qe3-ZV-1TS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ru4-or-GBN"/>
+                <constraint firstItem="Cep-Q1-qZJ" firstAttribute="top" secondItem="qe3-ZV-1TS" secondAttribute="bottom" constant="24" id="wId-Xo-Epx"/>
+                <constraint firstItem="fpm-zD-Y8t" firstAttribute="top" secondItem="3DN-Ps-802" secondAttribute="bottom" constant="27" id="yNx-Mh-npE"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
