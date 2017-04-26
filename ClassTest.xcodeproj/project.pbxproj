@@ -12,6 +12,12 @@
 		652530DE1E971CA0002E9203 /* AuthorityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652530DC1E971CA0002E9203 /* AuthorityViewController.xib */; };
 		652530E01E97209E002E9203 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652530DF1E97209E002E9203 /* CoreTelephony.framework */; };
 		652530E21E9760EC002E9203 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652530E11E9760EC002E9203 /* SystemConfiguration.framework */; };
+		6554FC2F1EB02BCB00ECD0D2 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC2E1EB02BCB00ECD0D2 /* ViewController1.m */; };
+		6554FC3B1EB0397300ECD0D2 /* DataTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC321EB0397300ECD0D2 /* DataTaskViewController.m */; };
+		6554FC3C1EB0397300ECD0D2 /* DownloadTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC341EB0397300ECD0D2 /* DownloadTaskViewController.m */; };
+		6554FC3D1EB0397300ECD0D2 /* UploadDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC361EB0397300ECD0D2 /* UploadDataViewController.m */; };
+		6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC381EB0397300ECD0D2 /* UploadImageReturnViewController.m */; };
+		6554FC3F1EB0397300ECD0D2 /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC3A1EB0397300ECD0D2 /* UploadImageViewController.m */; };
 		655BA6DC1E836F1E006EB28B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655BA6DB1E836F1E006EB28B /* QuartzCore.framework */; };
 		65ACE8AA1EA6F59300BE7ED6 /* PersonVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */; };
 		65ACE8AB1EA6F59300BE7ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE8A91EA6F59300BE7ED6 /* ViewController.m */; };
@@ -36,6 +42,18 @@
 		652530DC1E971CA0002E9203 /* AuthorityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorityViewController.xib; sourceTree = "<group>"; };
 		652530DF1E97209E002E9203 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		652530E11E9760EC002E9203 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6554FC2D1EB02BCB00ECD0D2 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		6554FC2E1EB02BCB00ECD0D2 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		6554FC311EB0397300ECD0D2 /* DataTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTaskViewController.h; sourceTree = "<group>"; };
+		6554FC321EB0397300ECD0D2 /* DataTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTaskViewController.m; sourceTree = "<group>"; };
+		6554FC331EB0397300ECD0D2 /* DownloadTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTaskViewController.h; sourceTree = "<group>"; };
+		6554FC341EB0397300ECD0D2 /* DownloadTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTaskViewController.m; sourceTree = "<group>"; };
+		6554FC351EB0397300ECD0D2 /* UploadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadDataViewController.h; sourceTree = "<group>"; };
+		6554FC361EB0397300ECD0D2 /* UploadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadDataViewController.m; sourceTree = "<group>"; };
+		6554FC371EB0397300ECD0D2 /* UploadImageReturnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageReturnViewController.h; sourceTree = "<group>"; };
+		6554FC381EB0397300ECD0D2 /* UploadImageReturnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageReturnViewController.m; sourceTree = "<group>"; };
+		6554FC391EB0397300ECD0D2 /* UploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageViewController.h; sourceTree = "<group>"; };
+		6554FC3A1EB0397300ECD0D2 /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
 		655BA6DB1E836F1E006EB28B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		65ACE8A61EA6F59300BE7ED6 /* PersonVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonVO.h; sourceTree = "<group>"; };
 		65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonVO.m; sourceTree = "<group>"; };
@@ -88,6 +106,23 @@
 			path = AuthorityTest;
 			sourceTree = "<group>";
 		};
+		6554FC301EB0397300ECD0D2 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				6554FC311EB0397300ECD0D2 /* DataTaskViewController.h */,
+				6554FC321EB0397300ECD0D2 /* DataTaskViewController.m */,
+				6554FC331EB0397300ECD0D2 /* DownloadTaskViewController.h */,
+				6554FC341EB0397300ECD0D2 /* DownloadTaskViewController.m */,
+				6554FC351EB0397300ECD0D2 /* UploadDataViewController.h */,
+				6554FC361EB0397300ECD0D2 /* UploadDataViewController.m */,
+				6554FC371EB0397300ECD0D2 /* UploadImageReturnViewController.h */,
+				6554FC381EB0397300ECD0D2 /* UploadImageReturnViewController.m */,
+				6554FC391EB0397300ECD0D2 /* UploadImageViewController.h */,
+				6554FC3A1EB0397300ECD0D2 /* UploadImageViewController.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
 		655BA6DA1E836F1E006EB28B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +141,8 @@
 				65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */,
 				65ACE8A81EA6F59300BE7ED6 /* ViewController.h */,
 				65ACE8A91EA6F59300BE7ED6 /* ViewController.m */,
+				6554FC2D1EB02BCB00ECD0D2 /* ViewController1.h */,
+				6554FC2E1EB02BCB00ECD0D2 /* ViewController1.m */,
 			);
 			path = OtherTest;
 			sourceTree = "<group>";
@@ -131,6 +168,7 @@
 		65C56E311E668A030052F9F3 /* ClassTest */ = {
 			isa = PBXGroup;
 			children = (
+				6554FC301EB0397300ECD0D2 /* NSURLSession */,
 				65ACE8A51EA6F55E00BE7ED6 /* OtherTest */,
 				652530D91E971BFC002E9203 /* AuthorityTest */,
 				652530D51E948AE6002E9203 /* AFNTest */,
@@ -290,11 +328,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ACE8AB1EA6F59300BE7ED6 /* ViewController.m in Sources */,
+				6554FC3F1EB0397300ECD0D2 /* UploadImageViewController.m in Sources */,
+				6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */,
 				652530D81E948B12002E9203 /* AFNViewController.m in Sources */,
+				6554FC3D1EB0397300ECD0D2 /* UploadDataViewController.m in Sources */,
 				65ACE8AA1EA6F59300BE7ED6 /* PersonVO.m in Sources */,
 				65ACE8AF1EA6FB1D00BE7ED6 /* MainViewController.m in Sources */,
+				6554FC2F1EB02BCB00ECD0D2 /* ViewController1.m in Sources */,
+				6554FC3C1EB0397300ECD0D2 /* DownloadTaskViewController.m in Sources */,
 				652530DD1E971CA0002E9203 /* AuthorityViewController.m in Sources */,
 				65C56E371E668A040052F9F3 /* AppDelegate.m in Sources */,
+				6554FC3B1EB0397300ECD0D2 /* DataTaskViewController.m in Sources */,
 				65C56E341E668A040052F9F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
