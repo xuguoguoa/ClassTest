@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WATableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="avd-rp-LhU">
+                        <rect key="frame" x="0.0" y="0.0" width="74" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="sKO-vK-xZb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-WW-ISk">
+                        <rect key="frame" x="76" y="0.0" width="244" height="79.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="avd-rp-LhU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0ke-6Z-gc3"/>
+                    <constraint firstItem="avd-rp-LhU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4Th-TY-JgL"/>
+                    <constraint firstItem="dEh-WW-ISk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GlY-a4-4Gf"/>
+                    <constraint firstAttribute="bottom" secondItem="avd-rp-LhU" secondAttribute="bottom" id="IAI-0p-Yof"/>
+                    <constraint firstItem="dEh-WW-ISk" firstAttribute="leading" secondItem="avd-rp-LhU" secondAttribute="trailing" constant="2" id="SJl-Lh-mgQ"/>
+                    <constraint firstAttribute="bottom" secondItem="dEh-WW-ISk" secondAttribute="bottom" id="amK-X0-swI"/>
+                    <constraint firstAttribute="trailing" secondItem="dEh-WW-ISk" secondAttribute="trailing" id="bEv-JM-yqJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iImageView" destination="avd-rp-LhU" id="cWJ-p7-djq"/>
+                <outlet property="label" destination="dEh-WW-ISk" id="QjD-94-hm0"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51"/>
+        </tableViewCell>
+    </objects>
+</document>

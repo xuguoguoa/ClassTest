@@ -19,6 +19,9 @@
 		6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC381EB0397300ECD0D2 /* UploadImageReturnViewController.m */; };
 		6554FC3F1EB0397300ECD0D2 /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554FC3A1EB0397300ECD0D2 /* UploadImageViewController.m */; };
 		655BA6DC1E836F1E006EB28B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655BA6DB1E836F1E006EB28B /* QuartzCore.framework */; };
+		6585D53F1EB049FA00BACA41 /* WATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6585D53D1EB049FA00BACA41 /* WATableViewCell.m */; };
+		6585D5401EB049FA00BACA41 /* WATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6585D53E1EB049FA00BACA41 /* WATableViewCell.xib */; };
+		6585D5421EB05C1E00BACA41 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6585D5411EB05C1E00BACA41 /* 1.png */; };
 		65ACE8AA1EA6F59300BE7ED6 /* PersonVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */; };
 		65ACE8AB1EA6F59300BE7ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE8A91EA6F59300BE7ED6 /* ViewController.m */; };
 		65ACE8AF1EA6FB1D00BE7ED6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE8AD1EA6FB1D00BE7ED6 /* MainViewController.m */; };
@@ -55,6 +58,10 @@
 		6554FC391EB0397300ECD0D2 /* UploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageViewController.h; sourceTree = "<group>"; };
 		6554FC3A1EB0397300ECD0D2 /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
 		655BA6DB1E836F1E006EB28B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6585D53C1EB049FA00BACA41 /* WATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WATableViewCell.h; sourceTree = "<group>"; };
+		6585D53D1EB049FA00BACA41 /* WATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WATableViewCell.m; sourceTree = "<group>"; };
+		6585D53E1EB049FA00BACA41 /* WATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WATableViewCell.xib; sourceTree = "<group>"; };
+		6585D5411EB05C1E00BACA41 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ClassTest/1.png; sourceTree = SOURCE_ROOT; };
 		65ACE8A61EA6F59300BE7ED6 /* PersonVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonVO.h; sourceTree = "<group>"; };
 		65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonVO.m; sourceTree = "<group>"; };
 		65ACE8A81EA6F59300BE7ED6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -137,12 +144,16 @@
 		65ACE8A51EA6F55E00BE7ED6 /* OtherTest */ = {
 			isa = PBXGroup;
 			children = (
+				6585D5411EB05C1E00BACA41 /* 1.png */,
 				65ACE8A61EA6F59300BE7ED6 /* PersonVO.h */,
 				65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */,
 				65ACE8A81EA6F59300BE7ED6 /* ViewController.h */,
 				65ACE8A91EA6F59300BE7ED6 /* ViewController.m */,
 				6554FC2D1EB02BCB00ECD0D2 /* ViewController1.h */,
 				6554FC2E1EB02BCB00ECD0D2 /* ViewController1.m */,
+				6585D53C1EB049FA00BACA41 /* WATableViewCell.h */,
+				6585D53D1EB049FA00BACA41 /* WATableViewCell.m */,
+				6585D53E1EB049FA00BACA41 /* WATableViewCell.xib */,
 			);
 			path = OtherTest;
 			sourceTree = "<group>";
@@ -265,10 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				652530DE1E971CA0002E9203 /* AuthorityViewController.xib in Resources */,
+				6585D5401EB049FA00BACA41 /* WATableViewCell.xib in Resources */,
 				65C56E421E668A060052F9F3 /* LaunchScreen.storyboard in Resources */,
 				65ACE8B01EA6FB1D00BE7ED6 /* MainViewController.xib in Resources */,
 				65C56E3F1E668A060052F9F3 /* Assets.xcassets in Resources */,
 				65C56E3D1E668A050052F9F3 /* Main.storyboard in Resources */,
+				6585D5421EB05C1E00BACA41 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +345,7 @@
 				6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */,
 				652530D81E948B12002E9203 /* AFNViewController.m in Sources */,
 				6554FC3D1EB0397300ECD0D2 /* UploadDataViewController.m in Sources */,
+				6585D53F1EB049FA00BACA41 /* WATableViewCell.m in Sources */,
 				65ACE8AA1EA6F59300BE7ED6 /* PersonVO.m in Sources */,
 				65ACE8AF1EA6FB1D00BE7ED6 /* MainViewController.m in Sources */,
 				6554FC2F1EB02BCB00ECD0D2 /* ViewController1.m in Sources */,
