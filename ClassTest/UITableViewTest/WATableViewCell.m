@@ -7,6 +7,7 @@
 //
 
 #import "WATableViewCell.h"
+#import "myLabel.h"
 
 @implementation WATableViewCell
 
@@ -15,6 +16,7 @@
   [super awakeFromNib];
   self.label.numberOfLines = 0;
   self.label.baselineAdjustment = UIBaselineAdjustmentAlignBaselines;
+  ((myLabel *)self.label).verticalAlignment = VerticalAlignmentTop;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

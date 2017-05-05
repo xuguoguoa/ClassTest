@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "ViewController1.h"
+#import "UITextViewController.h"
 
 
 @interface AppDelegate ()
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-  ViewController1 *mainVC = [[ViewController1 alloc]init];
+  UITextViewController *mainVC = [[UITextViewController alloc]init];
   UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
   navigationController.navigationBar.hidden = YES;
   self.window.rootViewController = navigationController;

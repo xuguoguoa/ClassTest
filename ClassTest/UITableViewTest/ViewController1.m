@@ -70,8 +70,7 @@
 {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusecell"];
   WATableViewCell *tableViewCell = (WATableViewCell *)cell;
-  //tableViewCell.iImageView.image = [UIImage imageNamed:@"1.png"];
-  tableViewCell.iImageView.hidden = YES;
+  tableViewCell.iImageView.image = [UIImage imageNamed:@"1.png"];
   tableViewCell.label.text = self.array2[indexPath.row];
   return cell;
 }
