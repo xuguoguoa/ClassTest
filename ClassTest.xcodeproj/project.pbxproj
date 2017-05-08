@@ -28,6 +28,7 @@
 		65C56E3D1E668A050052F9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C56E3B1E668A050052F9F3 /* Main.storyboard */; };
 		65C56E3F1E668A060052F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C56E3E1E668A060052F9F3 /* Assets.xcassets */; };
 		65C56E421E668A060052F9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C56E401E668A060052F9F3 /* LaunchScreen.storyboard */; };
+		65F14A3B1EC000E200DBDE33 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F14A3A1EC000E200DBDE33 /* CoreTextView.m */; };
 		727FAC6C6354255C992BD100 /* libPods-ClassTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AF34B2180AAB31E054C71E /* libPods-ClassTest.a */; };
 		90DCB0291EBC213A00AD2546 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0251EBC213A00AD2546 /* ViewController1.m */; };
 		90DCB02A1EBC213A00AD2546 /* WATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0271EBC213A00AD2546 /* WATableViewCell.m */; };
@@ -77,6 +78,8 @@
 		65C56E3E1E668A060052F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65C56E411E668A060052F9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65C56E431E668A060052F9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F14A391EC000E200DBDE33 /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		65F14A3A1EC000E200DBDE33 /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
 		90DCB0241EBC213A00AD2546 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		90DCB0251EBC213A00AD2546 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		90DCB0261EBC213A00AD2546 /* WATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WATableViewCell.h; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				90DCB0361EBC4DEA00AD2546 /* ImageTextSortViewController.h */,
 				90DCB0371EBC4DEA00AD2546 /* ImageTextSortViewController.m */,
 				90DCB0381EBC4DEA00AD2546 /* ImageTextSortViewController.xib */,
+				65F14A391EC000E200DBDE33 /* CoreTextView.h */,
+				65F14A3A1EC000E200DBDE33 /* CoreTextView.m */,
 			);
 			path = ImageTextSort;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 			files = (
 				65ACE8AB1EA6F59300BE7ED6 /* ViewController.m in Sources */,
 				6554FC3F1EB0397300ECD0D2 /* UploadImageViewController.m in Sources */,
+				65F14A3B1EC000E200DBDE33 /* CoreTextView.m in Sources */,
 				6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */,
 				90DCB0331EBC216B00AD2546 /* UITextViewController.m in Sources */,
 				90DCB0291EBC213A00AD2546 /* ViewController1.m in Sources */,

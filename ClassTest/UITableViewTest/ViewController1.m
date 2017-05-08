@@ -68,12 +68,20 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  NSLog(@"调用cellForRowAtIndexPath==%ld",(long)indexPath.row);
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reusecell"];
   WATableViewCell *tableViewCell = (WATableViewCell *)cell;
   tableViewCell.iImageView.image = [UIImage imageNamed:@"1.png"];
   tableViewCell.label.text = self.array2[indexPath.row];
   return cell;
 }
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSLog(@"调用heightForRowAtIndexPath");
+  return 60.f;
+}
+
 - (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
@@ -87,4 +95,5 @@
   }];
   return @[action1, action2, action3];
 }
+
 @end

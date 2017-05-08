@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-ur-c9M">
-                    <rect key="frame" x="127.5" y="84" width="120" height="30"/>
+                    <rect key="frame" x="128" y="84" width="120" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="UW9-T5-DLO"/>
                         <constraint firstAttribute="width" constant="120" id="k4h-yL-5ju"/>
@@ -49,16 +49,27 @@
                         <navigationItem id="Axb-7i-9ag"/>
                     </items>
                 </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-AW-8pJ">
+                    <rect key="frame" x="120" y="228" width="135" height="30"/>
+                    <state key="normal" title="图文混排"/>
+                    <connections>
+                        <action selector="ImageTextSortAction:" destination="-1" eventType="touchUpInside" id="Hyh-Gu-CqR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="he5-5e-bek" secondAttribute="trailing" id="5Kf-h4-HzP"/>
                 <constraint firstItem="dCw-ur-c9M" firstAttribute="top" secondItem="he5-5e-bek" secondAttribute="bottom" constant="20" id="6FN-1R-cjX"/>
+                <constraint firstItem="Z4g-AW-8pJ" firstAttribute="height" secondItem="Hgb-7H-aUH" secondAttribute="height" id="L4L-0y-RaG"/>
                 <constraint firstItem="he5-5e-bek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T9f-fz-f2R"/>
                 <constraint firstItem="Hgb-7H-aUH" firstAttribute="top" secondItem="dCw-ur-c9M" secondAttribute="bottom" constant="34" id="XwQ-Ad-U3a"/>
+                <constraint firstItem="Z4g-AW-8pJ" firstAttribute="width" secondItem="Hgb-7H-aUH" secondAttribute="width" id="aWE-BF-VOh"/>
+                <constraint firstItem="Z4g-AW-8pJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gZT-q0-mAK"/>
                 <constraint firstItem="Hgb-7H-aUH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="mmd-ZX-Yxa"/>
                 <constraint firstItem="dCw-ur-c9M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qRt-0n-Oov"/>
                 <constraint firstItem="Hgb-7H-aUH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tcY-EG-cR5"/>
+                <constraint firstItem="Z4g-AW-8pJ" firstAttribute="top" secondItem="Hgb-7H-aUH" secondAttribute="bottom" constant="50" id="zlu-W9-tYm"/>
                 <constraint firstItem="he5-5e-bek" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="zva-wU-8rE"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="52.5"/>

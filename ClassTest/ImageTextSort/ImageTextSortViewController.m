@@ -7,6 +7,7 @@
 //
 
 #import "ImageTextSortViewController.h"
+#import "CoreTextView.h"
 
 @interface ImageTextSortViewController ()
 
@@ -15,7 +16,8 @@
 @implementation ImageTextSortViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  //////使用富文本的方式进行图文混排
   self.view.backgroundColor = [UIColor whiteColor];
   UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(20, 64, 300, 50)];
   [self.view addSubview:label];
@@ -34,6 +36,10 @@
   label.numberOfLines = 0;
   label.attributedText = attributeStr;
   [label sizeToFit];
+  //////使用CoreText实现图文混排
+  CoreTextView *coreTextView = [[CoreTextView alloc]initWithFrame:CGRectMake(20, 300, [UIScreen mainScreen].bounds.size.width-20, 300)];
+  coreTextView.backgroundColor = [UIColor grayColor];
+  [self.view addSubview:coreTextView];
 }
 
 - (void)didReceiveMemoryWarning {

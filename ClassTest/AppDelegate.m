@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "ImageTextSortViewController.h"
+#import "MainViewController.h"
 
 
 @interface AppDelegate ()
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-  ImageTextSortViewController *mainVC = [[ImageTextSortViewController alloc]init];
+  MainViewController *mainVC = [[MainViewController alloc]init];
   UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
   navigationController.navigationBar.hidden = YES;
   self.window.rootViewController = navigationController;

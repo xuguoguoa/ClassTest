@@ -11,6 +11,6 @@ pod 'ShareSDK3/ShareSDKPlatforms','3.2.1'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat','3.2.1'
 pod 'ShareSDK3/ShareSDKPlatforms/QQ','3.2.1'
 pod 'Bugly'
-pod 'FMDB','2.6'
+pod 'FMDB','~>2.6'
 pod 'SSKeychain', '1.4.1'
 end

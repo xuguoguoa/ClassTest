@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "AuthorityViewController.h"
 #import "AFNViewController.h"
+#import "ImageTextSortViewController.h"
 
 @interface MainViewController ()
 
@@ -35,5 +36,9 @@
 - (IBAction)afnAction:(id)sender {
   AFNViewController *afnVC = [[AFNViewController alloc]init];
   [self.navigationController pushViewController:afnVC animated:YES];
+}
+- (IBAction)ImageTextSortAction:(id)sender {
+  ImageTextSortViewController *imageTextSortVC = [[ImageTextSortViewController alloc]init];
+  [self.navigationController pushViewController:imageTextSortVC animated:YES];
 }
 @end
