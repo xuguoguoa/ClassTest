@@ -35,6 +35,8 @@
 		90DCB0321EBC216B00AD2546 /* myLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB02E1EBC216B00AD2546 /* myLabel.m */; };
 		90DCB0331EBC216B00AD2546 /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0301EBC216B00AD2546 /* UITextViewController.m */; };
 		90DCB0341EBC216B00AD2546 /* UITextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DCB0311EBC216B00AD2546 /* UITextViewController.xib */; };
+		90DCB0391EBC4DEA00AD2546 /* ImageTextSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0371EBC4DEA00AD2546 /* ImageTextSortViewController.m */; };
+		90DCB03A1EBC4DEA00AD2546 /* ImageTextSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DCB0381EBC4DEA00AD2546 /* ImageTextSortViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,9 @@
 		90DCB02F1EBC216B00AD2546 /* UITextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewController.h; sourceTree = "<group>"; };
 		90DCB0301EBC216B00AD2546 /* UITextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewController.m; sourceTree = "<group>"; };
 		90DCB0311EBC216B00AD2546 /* UITextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewController.xib; sourceTree = "<group>"; };
+		90DCB0361EBC4DEA00AD2546 /* ImageTextSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextSortViewController.h; sourceTree = "<group>"; };
+		90DCB0371EBC4DEA00AD2546 /* ImageTextSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextSortViewController.m; sourceTree = "<group>"; };
+		90DCB0381EBC4DEA00AD2546 /* ImageTextSortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTextSortViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,7 @@
 		65C56E311E668A030052F9F3 /* ClassTest */ = {
 			isa = PBXGroup;
 			children = (
+				90DCB0351EBC4DBA00AD2546 /* ImageTextSort */,
 				90DCB02C1EBC216B00AD2546 /* TextTest */,
 				90DCB0231EBC213A00AD2546 /* UITableViewTest */,
 				6554FC301EB0397300ECD0D2 /* NSURLSession */,
@@ -232,6 +238,16 @@
 				90DCB0311EBC216B00AD2546 /* UITextViewController.xib */,
 			);
 			path = TextTest;
+			sourceTree = "<group>";
+		};
+		90DCB0351EBC4DBA00AD2546 /* ImageTextSort */ = {
+			isa = PBXGroup;
+			children = (
+				90DCB0361EBC4DEA00AD2546 /* ImageTextSortViewController.h */,
+				90DCB0371EBC4DEA00AD2546 /* ImageTextSortViewController.m */,
+				90DCB0381EBC4DEA00AD2546 /* ImageTextSortViewController.xib */,
+			);
+			path = ImageTextSort;
 			sourceTree = "<group>";
 		};
 		C9125783E29DB73CFC1267B2 /* Pods */ = {
@@ -308,6 +324,7 @@
 				65C56E421E668A060052F9F3 /* LaunchScreen.storyboard in Resources */,
 				90DCB02B1EBC213A00AD2546 /* WATableViewCell.xib in Resources */,
 				90DCB0341EBC216B00AD2546 /* UITextViewController.xib in Resources */,
+				90DCB03A1EBC4DEA00AD2546 /* ImageTextSortViewController.xib in Resources */,
 				65ACE8B01EA6FB1D00BE7ED6 /* MainViewController.xib in Resources */,
 				65C56E3F1E668A060052F9F3 /* Assets.xcassets in Resources */,
 				65C56E3D1E668A050052F9F3 /* Main.storyboard in Resources */,
@@ -385,6 +402,7 @@
 				652530DD1E971CA0002E9203 /* AuthorityViewController.m in Sources */,
 				65C56E371E668A040052F9F3 /* AppDelegate.m in Sources */,
 				6554FC3B1EB0397300ECD0D2 /* DataTaskViewController.m in Sources */,
+				90DCB0391EBC4DEA00AD2546 /* ImageTextSortViewController.m in Sources */,
 				65C56E341E668A040052F9F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
