@@ -274,4 +274,17 @@
   
 }
 
+-(void)testJson
+{
+  NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
+  [dic setObject:@"xucp" forKey:@"name"];
+  [dic setObject:@"haha" forKey:@"happy"];
+  [dic setObject:@"jj" forKey:@"ll"];
+  [dic setObject:@[@1,@2,@3] forKey:@"kkk"];
+  NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:0 error:nil];
+  NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+  //str = [str stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+  NSLog(str);
+}
+
 @end

@@ -50,7 +50,7 @@
   [attributeStr insertAttributedString:placeHolderAttrStr atIndex:14];//将占位符插入原富文本
   CTFramesetterRef frameSetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attributeStr);//一个frame的工厂，负责生成frame
   CGMutablePathRef path = CGPathCreateMutable();//创建绘制区域
-  CGPathAddRect(path, NULL, self.bounds);//添加绘制尺寸
+  CGPathAddRect(path, NULL, self.bounds);//添加绘制矩形尺寸
   NSInteger length = attributeStr.length;
   CTFrameRef frame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0,length), path, NULL);//工厂根据绘制区域及富文本（可选范围，多次设置）设置frame
   CTFrameDraw(frame, context);//根据frame绘制这段富文本字符串
@@ -100,7 +100,7 @@
       CGPathRef path = CTFrameGetPath(frame);//获取绘制区域
       CGRect colRect = CGPathGetBoundingBox(path);//获取剪裁区域边框
       CGRect imageBounds = CGRectOffset(boundsRun, colRect.origin.x, colRect.origin.y);
-      self.imageRect = imageBounds;
+      self.imageRect = imageBounds;
       return imageBounds;
     }
   }
@@ -141,37 +141,37 @@ static CGFloat widthCallBacks(void * ref)
   return NO;
 }
 
--(void)ClickOnStrWithPoint:(CGPoint)location
-{
-  NSArray * lines = (NSArray *)CTFrameGetLines(self.data.ctFrame);
-  CFRange ranges[lines.count];
-  CGPoint origins[lines.count];
-  CTFrameGetLineOrigins(_frame, CFRangeMake(0, 0), origins);
-  for (int i = 0; i < lines.count; i ++) {
-    CTLineRef line = (__bridge CTLineRef)lines[i];
-    CFRange range = CTLineGetStringRange(line);
-    ranges[i] = range;
-  }
-  for (int i = 0; i < _length; i ++) {
-    long maxLoc;
-    int lineNum;
-    for (int j = 0; j < lines.count; j ++) {
-      CFRange range = ranges[j];
-      maxLoc = range.location + range.length - 1;
-      if (i <= maxLoc) {
-        lineNum = j;
-        break;
-      }
-    }
-    CTLineRef line = (__bridge CTLineRef)lines[lineNum];        CGPoint origin = origins[lineNum];
-    CGRect CTRunFrame = [self frameForCTRunWithIndex:i CTLine:line origin:origin];
-    if ([self isFrame:CTRunFrame containsPoint:location]) {
-      NSLog(@"您点击到了第 %d 个字符，位于第 %d 行，然而他没有响应事件。",i,lineNum + 1);//点击到文字，然而没有响应的处理。可以做其他处理
-      return;
-    }
-  }
-  NSLog(@"您没有点击到文字");
-}
+//-(void)ClickOnStrWithPoint:(CGPoint)location
+//{
+//  NSArray * lines = (NSArray *)CTFrameGetLines(self.data.ctFrame);
+//  CFRange ranges[lines.count];
+//  CGPoint origins[lines.count];
+//  CTFrameGetLineOrigins(_frame, CFRangeMake(0, 0), origins);
+//  for (int i = 0; i < lines.count; i ++) {
+//    CTLineRef line = (__bridge CTLineRef)lines[i];
+//    CFRange range = CTLineGetStringRange(line);
+//    ranges[i] = range;
+//  }
+//  for (int i = 0; i < _length; i ++) {
+//    long maxLoc;
+//    int lineNum;
+//    for (int j = 0; j < lines.count; j ++) {
+//      CFRange range = ranges[j];
+//      maxLoc = range.location + range.length - 1;
+//      if (i <= maxLoc) {
+//        lineNum = j;
+//        break;
+//      }
+//    }
+//    CTLineRef line = (__bridge CTLineRef)lines[lineNum];        CGPoint origin = origins[lineNum];
+//    CGRect CTRunFrame = [self frameForCTRunWithIndex:i CTLine:line origin:origin];
+//    if ([self isFrame:CTRunFrame containsPoint:location]) {
+//      NSLog(@"您点击到了第 %d 个字符，位于第 %d 行，然而他没有响应事件。",i,lineNum + 1);//点击到文字，然而没有响应的处理。可以做其他处理
+//      return;
+//    }
+//  }
+//  NSLog(@"您没有点击到文字");
+//}
 
 -(BOOL)isIndex:(NSInteger)index inRange:(NSRange)range
 {

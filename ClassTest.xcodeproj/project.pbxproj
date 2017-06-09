@@ -30,6 +30,9 @@
 		65C56E421E668A060052F9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C56E401E668A060052F9F3 /* LaunchScreen.storyboard */; };
 		65F14A3B1EC000E200DBDE33 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F14A3A1EC000E200DBDE33 /* CoreTextView.m */; };
 		727FAC6C6354255C992BD100 /* libPods-ClassTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AF34B2180AAB31E054C71E /* libPods-ClassTest.a */; };
+		90003C801EC4903500B50967 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90003C7F1EC4903500B50967 /* RuntimeViewController.m */; };
+		900260581EE502DE00BEE1C4 /* UICollectionVIewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 900260571EE502DE00BEE1C4 /* UICollectionVIewTest.m */; };
+		900260651EE5727100BEE1C4 /* childVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 900260641EE5727100BEE1C4 /* childVO.m */; };
 		90DCB0291EBC213A00AD2546 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0251EBC213A00AD2546 /* ViewController1.m */; };
 		90DCB02A1EBC213A00AD2546 /* WATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCB0271EBC213A00AD2546 /* WATableViewCell.m */; };
 		90DCB02B1EBC213A00AD2546 /* WATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DCB0281EBC213A00AD2546 /* WATableViewCell.xib */; };
@@ -80,6 +83,12 @@
 		65C56E431E668A060052F9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F14A391EC000E200DBDE33 /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
 		65F14A3A1EC000E200DBDE33 /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
+		90003C7E1EC4903500B50967 /* RuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		90003C7F1EC4903500B50967 /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		900260561EE502DE00BEE1C4 /* UICollectionVIewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVIewTest.h; sourceTree = "<group>"; };
+		900260571EE502DE00BEE1C4 /* UICollectionVIewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVIewTest.m; sourceTree = "<group>"; };
+		900260631EE5727100BEE1C4 /* childVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = childVO.h; sourceTree = "<group>"; };
+		900260641EE5727100BEE1C4 /* childVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = childVO.m; sourceTree = "<group>"; };
 		90DCB0241EBC213A00AD2546 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		90DCB0251EBC213A00AD2546 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		90DCB0261EBC213A00AD2546 /* WATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WATableViewCell.h; sourceTree = "<group>"; };
@@ -163,6 +172,8 @@
 				6585D5411EB05C1E00BACA41 /* 1.png */,
 				65ACE8A61EA6F59300BE7ED6 /* PersonVO.h */,
 				65ACE8A71EA6F59300BE7ED6 /* PersonVO.m */,
+				900260631EE5727100BEE1C4 /* childVO.h */,
+				900260641EE5727100BEE1C4 /* childVO.m */,
 				65ACE8A81EA6F59300BE7ED6 /* ViewController.h */,
 				65ACE8A91EA6F59300BE7ED6 /* ViewController.m */,
 			);
@@ -190,6 +201,8 @@
 		65C56E311E668A030052F9F3 /* ClassTest */ = {
 			isa = PBXGroup;
 			children = (
+				900260551EE502AB00BEE1C4 /* UICollectionView */,
+				90003C7D1EC4901400B50967 /* Runtime */,
 				90DCB0351EBC4DBA00AD2546 /* ImageTextSort */,
 				90DCB02C1EBC216B00AD2546 /* TextTest */,
 				90DCB0231EBC213A00AD2546 /* UITableViewTest */,
@@ -217,6 +230,24 @@
 				65C56E331E668A040052F9F3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90003C7D1EC4901400B50967 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				90003C7E1EC4903500B50967 /* RuntimeViewController.h */,
+				90003C7F1EC4903500B50967 /* RuntimeViewController.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		900260551EE502AB00BEE1C4 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				900260561EE502DE00BEE1C4 /* UICollectionVIewTest.h */,
+				900260571EE502DE00BEE1C4 /* UICollectionVIewTest.m */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		90DCB0231EBC213A00AD2546 /* UITableViewTest */ = {
@@ -394,6 +425,7 @@
 			files = (
 				65ACE8AB1EA6F59300BE7ED6 /* ViewController.m in Sources */,
 				6554FC3F1EB0397300ECD0D2 /* UploadImageViewController.m in Sources */,
+				900260581EE502DE00BEE1C4 /* UICollectionVIewTest.m in Sources */,
 				65F14A3B1EC000E200DBDE33 /* CoreTextView.m in Sources */,
 				6554FC3E1EB0397300ECD0D2 /* UploadImageReturnViewController.m in Sources */,
 				90DCB0331EBC216B00AD2546 /* UITextViewController.m in Sources */,
@@ -409,6 +441,8 @@
 				65C56E371E668A040052F9F3 /* AppDelegate.m in Sources */,
 				6554FC3B1EB0397300ECD0D2 /* DataTaskViewController.m in Sources */,
 				90DCB0391EBC4DEA00AD2546 /* ImageTextSortViewController.m in Sources */,
+				900260651EE5727100BEE1C4 /* childVO.m in Sources */,
+				90003C801EC4903500B50967 /* RuntimeViewController.m in Sources */,
 				65C56E341E668A040052F9F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

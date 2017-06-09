@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "MainViewController.h"
+#import "RuntimeViewController.h"
+#import "childVO.h"
 
 
 @interface AppDelegate ()
@@ -21,12 +22,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-  MainViewController *mainVC = [[MainViewController alloc]init];
+  RuntimeViewController *mainVC = [[RuntimeViewController alloc]init];
   UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
   navigationController.navigationBar.hidden = YES;
   self.window.rootViewController = navigationController;
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
+  childVO *oldChild = [[childVO alloc]init];
+  oldChild.address = @"1";
+  oldChild.name = @"2";
+  oldChild.number = 3;
+  oldChild.school = @"4";
+  oldChild.englishScore = 99.99;
+  childVO *newChild = [oldChild copy];
   return YES;
 }
 
