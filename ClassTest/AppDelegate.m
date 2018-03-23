@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "RuntimeViewController.h"
 #import "childVO.h"
+#import "ViewController.h"
 
 
 @interface AppDelegate ()
@@ -22,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-  RuntimeViewController *mainVC = [[RuntimeViewController alloc]init];
+  ViewController *mainVC = [[ViewController alloc]init];
   UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
   navigationController.navigationBar.hidden = YES;
   self.window.rootViewController = navigationController;

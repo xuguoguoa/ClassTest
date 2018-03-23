@@ -13,4 +13,5 @@ pod 'ShareSDK3/ShareSDKPlatforms/QQ','3.2.1'
 pod 'Bugly'
 pod 'FMDB','~>2.6'
 pod 'SSKeychain', '1.4.1'
+pod 'ReactiveCocoa', '2.5.0'
 end

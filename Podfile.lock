@@ -14,12 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Bugly (2.4.8)
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
-  - Masonry (1.0.2)
+  - Bugly (2.5.0)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - Masonry (1.1.0)
   - MOBFoundation (1.5.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -52,6 +59,7 @@ DEPENDENCIES:
   - FMDB (~> 2.6)
   - Masonry
   - MOBFoundation (= 1.5.1)
+  - ReactiveCocoa (= 2.5.0)
   - SDWebImage (~> 4.0.0)
   - ShareSDK3 (= 3.2.1)
   - ShareSDK3/ShareSDKPlatforms (= 3.2.1)
@@ -62,14 +70,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Bugly: da3c02408c14838d498429320545a8e439392978
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MOBFoundation: 79efc94db961fe5a08cf32de69166f6a29a3b2b5
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   ShareSDK3: 3b1d56ec0200d151d5ddd9e173f2ba616a128fca
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
 
-PODFILE CHECKSUM: 0ee045b9414f34c8e9150d178361de0968c38b4d
+PODFILE CHECKSUM: e08702cf851ae7e851a2931e3f37f30498af6c04
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

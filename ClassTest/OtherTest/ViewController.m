@@ -26,32 +26,44 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   //测试synchronized
-  [NSThread detachNewThreadSelector:@selector(testSynchronized:) toTarget:self withObject:@"线程1"];
-  [NSThread detachNewThreadSelector:@selector(testSynchronized1:) toTarget:self withObject:@"线程2"];
-  [self testSynchronized:@"1"];
-  dispatch_async(dispatch_get_global_queue(0, 0), ^{
-    @synchronized (self)
-    {
-      sleep(5.0);
-      NSLog(@"%@", @"1");
-    };
-  });
-  [self testSynchronized1:@"2"];
+//  [NSThread detachNewThreadSelector:@selector(testSynchronized:) toTarget:self withObject:@"线程1"];
+//  [NSThread detachNewThreadSelector:@selector(testSynchronized1:) toTarget:self withObject:@"线程2"];
+//  [self testSynchronized:@"1"];
+//  dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//    @synchronized (self)
+//    {
+//      sleep(5.0);
+//      NSLog(@"%@", @"1");
+//    };
+//  });
+//  [self testSynchronized1:@"2"];
 //  测试NSTimer
-  NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-  [formatter setDateFormat:@"yyyy-MM-dd HH:ss:mm"];
-  NSString *currentTime = [formatter stringFromDate:[NSDate date]];
-  NSLog(@"%@", [NSString stringWithFormat:@"当前时间%@",currentTime]);
-  [NSTimer scheduledTimerWithTimeInterval:5.0 repeats:NO block:^(NSTimer * _Nonnull timer) {
-    NSString *otherTime = [formatter stringFromDate:[NSDate date]];
-    NSLog(@"%@", otherTime);
-  }];
+//  NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//  [formatter setDateFormat:@"yyyy-MM-dd HH:ss:mm"];
+//  NSString *currentTime = [formatter stringFromDate:[NSDate date]];
+//  NSLog(@"%@", [NSString stringWithFormat:@"当前时间%@",currentTime]);
+//  [NSTimer scheduledTimerWithTimeInterval:5.0 repeats:NO block:^(NSTimer * _Nonnull timer) {
+//    NSString *otherTime = [formatter stringFromDate:[NSDate date]];
+//    NSLog(@"%@", otherTime);
+//  }];
   //测试动画
-  [self testAnimated];
+  //[self testAnimated];
   
   ///测试排序
-  [self sortArray];
-  [self sortDictionary];
+//  [self sortArray];
+//  [self sortDictionary];
+    
+    //测试UIAlertController
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"测试" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancenAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"%@",@"点了取消");
+        }];
+        [alertController addAction:cancenAction];
+        [self presentViewController:alertController animated:YES completion:^{
+            NSLog(@"%@",@"qq");
+        }];
+    });
 }
 
 -(void)sortArray
